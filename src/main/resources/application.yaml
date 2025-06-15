@@ -1,0 +1,19 @@
+app:
+
+
+spring:
+  application:
+    name: activation_integral
+  datasource:
+    url: jdbc:h2:mem:neutron;DB_CLOSE_DELAY=-1
+    driver-class-name: org.h2.Driver
+    username: George
+    password: password
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    database-platform: org.hibernate.dialect-H2Dialect
+    hibernate:
+      ddl-auto: none
